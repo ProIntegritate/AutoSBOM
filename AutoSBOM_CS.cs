@@ -1,5 +1,5 @@
 // Written in 2024 by Glenn Larsson.
-#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
+// Usage: string sResult = AutoSBOM.fGetSBOMFromAssembies();
 
 using System;
 using System.Diagnostics;
