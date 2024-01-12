@@ -85,10 +85,15 @@ Module SBOM
         ' sResourceFile -> Needs the full name, i.e. Project name + embedded filename: "AutoSBom.project.assets.json"
         If sResourceFile = "" Then sResourceFile = "AutoSBom.project.assets.json"
 
-        Dim oStream As Stream = Assembly.GetExecutingAssembly.GetManifestResourceStream(sResourceFile)
-        Dim strReader As StreamReader = New StreamReader(oStream)
-        Return strReader.ReadToEnd.ToString
+        Dim sResult As String = ""
+        Try
+            Dim oStream As Stream = Assembly.GetExecutingAssembly.GetManifestResourceStream(sResourceFile)
+            Dim strReader As StreamReader = New StreamReader(oStream)
+            sResult = strReader.ReadToEnd.ToString
+        Catch ex As Exception
+        End Try
+
+        Return sResult
 
     End Function
-
 End Module
