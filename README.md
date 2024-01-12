@@ -7,7 +7,7 @@ Please note that there is no XML/JSON formatting, if you want that - add it your
 Your job is to import the "project.assets.json" file as an Embedded Resource into the project/solution. After that, you just call the function and it will spit out all the packages.
 
 This is what you get:
-![Output](sbom.png)
+![Output](SBOM.jpg)
 
 VB .NET and C# versions available. Works with .NET5 and up, 4.8 and below are NOT supported.
 
