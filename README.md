@@ -1,5 +1,5 @@
 # AutoSBOM
-Auto SBOM Generator from Reflection.Assembly() + Embedded resource file (project.assets.json)
+A .NET auto SBOM Generator from Reflection.Assembly() + Embedded resource file (project.assets.json)
 
 Basically these extract the Reflection.Assemblys + References from the resource file and outputs them into a CSV format.
 Please note that there is no XML/JSON formatting, if you want that - add it yourself.
