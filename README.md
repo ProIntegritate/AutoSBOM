@@ -16,10 +16,15 @@ CC0 so go nuts.
 # Adding a reference to project.assets.json
 
 Start by right-clicking the project, then add and existing item:<br/>
+
 ![Output](reference_001.png)
+
 Then navigate to the obj folder and select project.assets.json. Select "Add as Link" from options.<br/>
+
 ![Output](reference_002.png)
+
 Now, in the solution explorer, click on the referenced project.assets.json file, set to Embedded Resource and Always copy.<br/>
+
 ![Output](reference_003.png)
 
 NOTE: This has to be done for all projects in the solution, and you have to call the function from each project in the solution to get the results.
