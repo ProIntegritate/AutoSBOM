@@ -28,3 +28,5 @@ Now, in the solution explorer, click on the referenced project.assets.json file,
 ![Output](reference_003.png)
 
 NOTE: This has to be done for all projects in the solution, and you have to call the function from each project in the solution to get the results.
+
+For a project.assets.json file to exist in the Obj folder, you have to add some nuget packages. If the file is missing and you know you have added nuget packages, just do a build and the file will appear.
