@@ -3,6 +3,8 @@ A .NET auto SBOM Generator from Reflection.Assembly() + Embedded resource file (
 
 Basically these extract the Reflection.Assemblys + References from the resource file and outputs them into a CSV format, the advantage here is that you do not need any external tools to generate this information. Please note that there is no XML/JSON formatting, if you want that - add it yourself.
 
+The project is released "as-is", i currently do not need to generate any SBOM information, but if and when i do, i will update it with a proper output module. But i don't want to stop others from using this code to skip the boring AF part about generating this information because a bunch of paperpushers thinks that this actually is useful.
+
 Your job is to import the "project.assets.json" file as an Embedded Resource into the project/solution (see below on how to do that). After that, you just call the function and it will spit out all the packages.
 
 As an example, this is what you get:
