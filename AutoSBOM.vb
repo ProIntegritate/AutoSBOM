@@ -24,6 +24,7 @@ Module SBOM
         Dim sAssembly As String = ""
         Dim sResult As String = ""
 
+        ' Iterate through results
         For Each sItem In asm
             sAssembly = sItem.FullName.ToString
             sResult = sResult & "Package: " & sAssembly.Split(",")(0) & ", Version:"
@@ -40,7 +41,7 @@ Module SBOM
 
         Dim sLines() As String = sEmbeddedProjectAssetsFile.Split(vbCrLf)
 
-    ' Populate string with Assemblies, then project assets
+        ' Populate string with Assemblies, then project assets
         Dim sResult As String = fGetAssemblies() ' Init with assemblies in appdomain
         Dim sAssemblyItem() As String = {}
         Dim sAssemblyString As String = ""
@@ -71,7 +72,7 @@ Module SBOM
 
         Next
 
-        ' Sort
+        ' Sort results
         Dim x() As String = sResult.Split(vbCrLf)
         sResult = ""
         Array.Sort(x)
